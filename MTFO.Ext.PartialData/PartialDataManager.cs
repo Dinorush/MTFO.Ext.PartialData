@@ -183,6 +183,7 @@ namespace MTFO.Ext.PartialData
             }
 
             partialDataCache.JsonsToRead.Enqueue(objNode.ToString());
+            cache.CacheInheritance(objNode, idNode);
         }
 
         internal static void LoadPartialData()
@@ -233,6 +234,7 @@ namespace MTFO.Ext.PartialData
                     cache.DataBlockType.AddJsonBlock(json);
                     isChanged = true;
                 }
+                cache.DataBlockType.ApplyInheritance();
 
                 if (isChanged && isLiveEdit)
                 {

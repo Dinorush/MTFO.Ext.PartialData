@@ -11,10 +11,12 @@ using System.IO;
 
 namespace MTFO.Ext.PartialData
 {
-    [BepInPlugin("MTFO.Extension.PartialBlocks", "MTFO pDataBlock", "1.4.0")]
+    [BepInPlugin("MTFO.Extension.PartialBlocks", "MTFO pDataBlock", "1.5.0")]
     [BepInProcess("GTFO.exe")]
     [BepInDependency(MTFOUtil.MTFOGUID, BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("dev.gtfomodding.gtfo-api", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency(InjectLibUtil.GUID, BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency(InheritanceUtil.GUID, BepInDependency.DependencyFlags.SoftDependency)]
     internal class EntryPoint : BasePlugin
     {
         public override void Load()
