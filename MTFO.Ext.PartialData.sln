@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTFO.Ext.PartialData", "MTFO.Ext.PartialData\MTFO.Ext.PartialData.csproj", "{2E4A334C-A42C-4A45-81AA-4A11C35B538A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNetIntegration", "JsonNetIntegration\JsonNetIntegration.csproj", "{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +21,6 @@ Global
 		{2E4A334C-A42C-4A45-81AA-4A11C35B538A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E4A334C-A42C-4A45-81AA-4A11C35B538A}.Release|x64.ActiveCfg = Release|x64
 		{2E4A334C-A42C-4A45-81AA-4A11C35B538A}.Release|x64.Build.0 = Release|x64
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9115457-9BC1-4776-A6CF-B8AB6D290CCB}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

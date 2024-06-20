@@ -7,14 +7,12 @@
 
 <PropertyGroup>
 	<BIELibsFolder>$(GameFolder)\BepInEx\core</BIELibsFolder>
-	<CorLibsFolder>$(GameFolder)\dotnet</CorLibsFolder>
 	<InteropLibsFolder>$(GameFolder)\BepInEx\interop</InteropLibsFolder>
 	<TargetFramework>net6</TargetFramework>
 	<PluginsFolder>$(GameFolder)\BepInEx\plugins</PluginsFolder>
 	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	<Version>0.1.0</Version>
 	<RootNamespace>MTFO.Ext.PartialData</RootNamespace>
-	<Platforms>x64</Platforms>
 </PropertyGroup>
 
 	<!-- BepInEx libs -->
@@ -28,7 +26,7 @@
 	<!-- CorLibs -->
 	<ItemGroup>
 		<Reference Include="$(CorLibsFolder)\*.dll" Private="false" />
-		<Reference Include="$(CorLibsFolder)\..\System.Private.CoreLib.dll" Private="false" />
+		<Reference Include="$(DotNetFolder)\System.Private.CoreLib.dll" Private="false" />
 	</ItemGroup>
 
 	<!-- Interop -->
@@ -40,6 +38,8 @@
 
 	<ItemGroup>
 		<Reference Include="$(PluginsFolder)/GTFO-API.dll" Private="false" />
+		<Reference Include="$(PluginsFolder)/**/InjectLib.dll" Private="false" />
+		<Reference Include="$(PluginsFolder)/**/InheritanceDataBlocks.dll" Private="false" />
 	</ItemGroup>
 </Project>
  
