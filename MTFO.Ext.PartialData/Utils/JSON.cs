@@ -28,6 +28,8 @@ namespace MTFO.Ext.PartialData.Utils
             setting.Converters.Add(new ColorConverter());
             setting.Converters.Add(new JsonStringEnumConverter());
             setting.Converters.Add(new LocalizedTextConverter());
+            if (InjectLibUtil.HasInjectLib)
+                setting.Converters.Add(new InjectLibConnectorWrapper());
 
             return setting;
         }
